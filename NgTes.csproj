@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Saeid</Authors>
+    <Description>description</Description>
+    <Copyright>Copyright</Copyright>
+    <PackageProjectUrl>PackageURL</PackageProjectUrl>
+    <PackageIconUrl>Icon URL</PackageIconUrl>
+    <RepositoryType>GIT</RepositoryType>
+    <PackageReleaseNotes>Release</PackageReleaseNotes>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+</Project>
