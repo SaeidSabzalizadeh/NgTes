@@ -12,16 +12,16 @@ before_build:
   # Display .NET Core version
   - cmd: dotnet --version
   # Display minimal restore text
-  - cmd: dotnet restore ./src/src.csproj --verbosity m
+  - cmd: dotnet restore ./NgTes.csproj --verbosity m
 build_script:
   # output will be in ./src/bin/debug/netstandard2.0/publish
-  - cmd: dotnet publish ./src/src.csproj
+  - cmd: dotnet publish ./NgTes.csproj
 after_build:
   # For once the build has completed
 artifacts:
- - path: '\src\bin\Debug\netstandard2.0\publish'
-   name: WebSite
-   type: WebDeployPackage
+ - path: '\bin\Debug\netstandard2.0\publish'
+   name: NgTest
+   type: SdkPackage
 clone_depth: 1
 on_finish :
   # any cleanup in here
